@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddd; /* cinza claro */
+}
+
+div#interface {
+    position: relative;/* Transforma a div em um container */
+    background-color: #fff; /* branco */@
+    width: 900px;
+    margin: -23px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5); /* sombra */
+    padding: 10px; /* espaçamento interno da div */
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo';
+    color: #606060;
+    font-size: 28pt;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888; /* cinza claro */
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/* paragrafos */
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* links */
+a {
+    color: #606060; /* cinza */
+    text-decoration: none; /* remover o sublinhado do link */
+}
+
+/* hover é pra quando o mouse passar sobre */
+a:hover {
+    text-decoration: underline; /* aparecer o sublinhado do link */
+}
+
+/* . para identificar a class foto.legenda da tag figure */
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white; /* solid hidden dotted dashed double groove ridge inset outset */
+    box-shadow: 1px 1px 4px black; /* horizontal vertical difusão cor da sombra */
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+nav#menu {
+    display: block; /* transformar tudo o que é menu em bloco */
+}
+
+nav#menu ul {
+    list-style: none; /* remover marcadores da lista */
+    text-transform: uppercase; /* converter para maiúsculas */
+    position: absolute; /* para que o menu possa ser colocado no topo, é preciso virar absoluto */
+    top: -3px; /* posicionado ao topo. valor negativo para empurrar além da borda */
+    right: 25px; /* posicionado à direita */
+}
+
+nav#menu li {
+    display: inline-block; /* colocar os itens lado a lado */
+    background-color: #ddd; /* cor de fundo - cinza */
+    padding: 10px; /* aumentar o espaçamento interno da caixa cinza */
+    margin: 2px; /* aumentar o espaçamento externo da caixa cinza */
+    transition: background-color 1.5s; /* tempo da transição do background-color */
+}
+
+/* hover para efeito do mouse ao passar sobre o li */
+nav#menu li:hover {
+    background-color: #606060; /* cinza escuro */
+}
+
+nav#menu h1 {
+    display: none; /* ocultar a tag h1 que está em nav id menu */
+}
+
+nav#menu a {
+    color: #000; /* preto */
+    text-decoration: none; /* remove o sublinhado do link */
+}
+/* ao passar o mouse sobre o link (tag a) */
+nav#menu a:hover {
+    color: #fff; /* branco */
+    text-decoration: underline; /* sublinhado */
+}
+
+
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/* usa-se # para acessar um id no html */
+
+nav#menu ul {
+    list-style: none; /* remover marcadores da lista */
+    text-transform: uppercase; /* converter para maiúsculas */
+    position: absolute; /* para que o menu possa ser colocado no topo, é preciso virar absoluto */
+    top: -3px; /* posicionado ao topo. valor negativo para empurrar além da borda */
+    right: 25px; /* posicionado à direita */
+    display;
+}
+
+nav#menu li {
+    display: inline-block; /* colocar os itens lado a lado */
+    background-color: #ddd; /* cor de fundo - cinza */
+    padding: 10px; /* aumentar o espaçamento interno da caixa cinza */
+    margin: 2px; /* aumentar o espaçamento externo da caixa cinza */
+    transition: background-color 1.5s; /* tempo da transição do background-color */
+}
+
+/* hover para efeito do mouse ao passar sobre o li */
+nav#menu li:hover {
+    background-color: #606060; /* cinza escuro */
+}
+
+nav#menu h1 {
+    display: none; /* ocultar a tag h1 que está em nav id menu */
+}
+
+nav#menu a {
+    color: #000; /* preto */
+    text-decoration: none; /* remove o sublinhado do link */
+}
+/* ao passar o mouse sobre o link (tag a) */
+nav#menu a:hover {
+    color: #fff; /* branco */
+    text-decoration: underline; /* sublinhado */
+}

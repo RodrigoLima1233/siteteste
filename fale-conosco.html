@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Fale Conosco - Google Glass</title>
+		<link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+		<link rel="stylesheet" type="text/css" href="_css/form.css" />
+	</head>
+	<script language="javascript" src="_javascript/funcoes.js" > </script>
+
+	<script>
+		function calc_total(){
+			var qtd = parseInt(document.getElementById('idQtd').value);
+			tot = qtd * 1500; /* cada google glass custa 1500 dólares */
+			document.getElementById('idTot').value = tot;
+		}
+	</script>
+	<body>
+		<div id="interface">
+			<header id = "cabecalho">
+				<hgroup>
+					<h1>Google Glass</h1>
+					<h2>A revolução do Google está chegando</h2>
+				</hgroup>
+				<img id="icone" src="_imagens/contato.png"/>
+				<nav id="menu">
+					<h1>Menu Principal</h1>
+					<ul>
+						<!-- 153.5 -- onmouseout mudar para a imagem desta página -->
+						<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+						<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+						<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+						<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+						<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+					</ul>
+				</nav>
+			<!-- Fim do cabeçalho desta página -->
+			</header>
+
+
+			<!-- 206 -- section, article, hgroup, h3, h1, h2, h3 -->
+			<section id="corpo-full">
+				<article id="noticia-principal">
+					<hgroup id="cabecalho-noticia-principal">
+						<h3>Glass > Contato</h3>
+						<h1>Formulário de Contato</h1>
+						<h3 class="direita">Atualizado em 01/Maio/2023</h3>
+					</hgroup>
+
+					<form method="post" id="idContato" action="mailto:tiofab@gmail.com" oninput="calc_total()">
+
+
+						<fieldset id="idUsuario">
+							<legend>Identificação do Usuário</legend>
+							<p><label for="idNome">Nome:</label><input type="text" name="nNome" id="idNome" size="20" maxlength="40" placeholder="Nome Completo"></p>
+							<p><label for="idSenha">Senha:</label><input type="password" name="nSenha" id="idSenha" size="8" maxlength="8" placeholder="até 8 dígitos"></p>
+							<p><label for="idEmail">E-mail:</label><input type="email" name="nEmail" id="idEmail" size="20" maxlength="40"></p>
+							<fieldset id="idSexo">
+								<legend>Sexo:</legend>
+								<input type="radio" name="nSexo" id="idMasc" ><label for="idMasc">Masculino</label><br>
+								<input type="radio" name="nSexo" id="idFem" checked><label for="idFem">Feminino</label>
+							</fieldset>
+							<p><label for="idNasc">Data de Nascimento:</label><input type="date" name="nNasc" id="idNasc"></p>
+						</fieldset>
+
+						<fieldset id="idEndereco">
+							<legend>Endereço do Usuário</legend>
+							<p><label for="idRua">Logradouro:</label><input type="text" name="nRua" id="idRua" size="13" maxlength="80" placeholder="Rua, Av, Travessa..."></p>
+							<p><label for="idNum">Número:</label><input type="number" name="nNum" id="idNum" min="0" max="9999"></p>
+							<p><label for="idEst">Estado:</label>
+								<select name="nEst" id="idEst">
+									<optgroup label="Região Sudeste">
+										<option value="RJ">Rio de Janeiro</option>
+										<option value="SP">São Paulo</option>
+										<option value="ES">Espírito Santo</option>
+										<option value="MG">Minas Gerais</option>
+									</optgroup>
+									<optgroup label="Região Sul">
+										<option value="PR">Paraná</option>
+										<option value="SC">Santa Catarina</option>
+										<option value="RS">Rio Grande do Sul</option>
+									</optgroup>
+								</select>
+							</p>
+							<p><label for="idCid">Cidade:</label><input type="text" name="nCid" id="idCid" size="20" maxlength="40" placeholder="Sua Cidade" list="cidades">
+								<datalist id="cidades">
+									<option value="Rio de Janeiro"></option>
+									<option value="Nova Iguaçu"></option>
+									<option value="Niterói"></option>
+									<option value="Belford Roxo"></option>
+								</datalist>
+							</p>
+						</fieldset>
+
+						<fieldset id="idMensagem">
+							<legend>Mensagem do Usuário</legend>
+							<p><label for="idUrg">Grau de Urgência:</label> Min<input type="range" name="nUrg" id="idUrg" min="0" max="10" step="2">Máx</p>
+							<p><label for="idMsg">Mensagem:</label>
+								<textarea name="nMsg" id="idMsg" cols="45" rows="5" maxlength="250" placeholder="Deixe aqui sua mensagem"></textarea>
+							</p>
+						</fieldset>
+
+						<fieldset id="idPedido">
+							<legend>Quero ir para T.I></legend>
+							<p><input type="checkbox" name="nPed" id="idPed"><label for="idPed">Gostaria de adquirir um curso de T.I. quando disponível</label></p>
+							<p><label for="idQtd">Quantidade:</label><input type="number" name="nQtd" id="idQtd" min="0" max="5" value="0"></p>
+							<p><label for="idTot">Preço Total: R$</label><input type="text" name="nTot" id="idTot" placeholder="Total a pagar" readonly></p>
+						</fieldset>
+
+						<input type="image" src="_imagens/botao-enviar.png" name="nEnviar">
+
+						</form>
+
+				</article>
+			</section>
+
+			<footer id="rodape">
+				<p>Copyright 2023 - by Rodrigo Lima <br />
+				<a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> |
+				<a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+			</footer>
+		</div>
+	</body>
+</html>
