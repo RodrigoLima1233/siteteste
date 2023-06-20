@@ -175,3 +175,8 @@ img#icone {
     position: absolute;
     right: 25px;
 }
+
+article h2 {
+    background-color: #000;
+    color: white;
+}

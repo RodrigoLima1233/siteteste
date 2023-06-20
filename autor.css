@@ -139,7 +139,7 @@ nav#menu ul {
     list-style: none; /* remover marcadores da lista */
     text-transform: uppercase; /* converter para maiúsculas */
     position: absolute; /* para que o menu possa ser colocado no topo, é preciso virar absoluto */
-    top: -3px; /* posicionado ao topo. valor negativo para empurrar além da borda */
+    top: 10px; /* posicionado ao topo. valor negativo para empurrar além da borda */
     right: 25px; /* posicionado à direita */
     display;
 }
@@ -174,4 +174,9 @@ nav#menu a:hover {
 img#icone {
     position: absolute;
     right: 25px;
+}
+
+article h2 {
+    background-color: #000;
+    color: white;
 }
