@@ -87,9 +87,9 @@ figure.foto-legenda figcaption {
 }
 
 nav#menu {
-    display: inline;
+    display: block;
     height: 100px;
-    background-color: red;  /* transformar tudo o que é menu em bloco */
+
 }
 
 nav#menu ul {
@@ -110,7 +110,7 @@ nav#menu li {
 
 /* hover para efeito do mouse ao passar sobre o li */
 nav#menu li:hover {
-    background-color: #000; /* cinza escuro */
+    background-color: #606060; /* cinza escuro */
 }
 
 nav#menu h1 {
@@ -123,7 +123,7 @@ nav#menu a {
 }
 /* ao passar o mouse sobre o link (tag a) */
 nav#menu a:hover {
-    color: #000; /* branco */
+    color: #fff; /* branco */
     text-decoration: underline; /* sublinhado */
 }
 
@@ -154,7 +154,7 @@ nav#menu li {
 
 /* hover para efeito do mouse ao passar sobre o li */
 nav#menu li:hover {
-    background-color: black; /* cinza escuro */
+    background-color: #606060; /* cinza escuro */
 }
 
 nav#menu h1 {

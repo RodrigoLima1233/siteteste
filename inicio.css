@@ -5,6 +5,7 @@
 @font-face {
     font-family: 'FonteLogo';
     src: url("../_fonts/bubblegum-sans-regular.otf");
+    }
 
 
 body {
@@ -14,7 +15,7 @@ body {
 
 div#interface {
     position: relative;/* Transforma a div em um container */
-    background-color: #fff; /* branco */@
+    background-color: #fff; /* branco */
     width: 900px;
     margin: -23px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.5); /* sombra */
@@ -86,7 +87,9 @@ figure.foto-legenda figcaption {
 }
 
 nav#menu {
-    display: block; /* transformar tudo o que é menu em bloco */
+    display: inline;
+    height: 100px;
+    background-color: red;  /* transformar tudo o que é menu em bloco */
 }
 
 nav#menu ul {
@@ -107,7 +110,7 @@ nav#menu li {
 
 /* hover para efeito do mouse ao passar sobre o li */
 nav#menu li:hover {
-    background-color: #606060; /* cinza escuro */
+    background-color: #000; /* cinza escuro */
 }
 
 nav#menu h1 {
@@ -120,7 +123,7 @@ nav#menu a {
 }
 /* ao passar o mouse sobre o link (tag a) */
 nav#menu a:hover {
-    color: #fff; /* branco */
+    color: #000; /* branco */
     text-decoration: underline; /* sublinhado */
 }
 
@@ -151,7 +154,7 @@ nav#menu li {
 
 /* hover para efeito do mouse ao passar sobre o li */
 nav#menu li:hover {
-    background-color: #606060; /* cinza escuro */
+    background-color: black; /* cinza escuro */
 }
 
 nav#menu h1 {
@@ -166,4 +169,9 @@ nav#menu a {
 nav#menu a:hover {
     color: #fff; /* branco */
     text-decoration: underline; /* sublinhado */
+}
+
+img#icone {
+    position: absolute;
+    right: 25px;
 }

@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8"/>
-		<title>Fale Conosco - Google Glass</title>
-		<link rel="stylesheet" type="text/css" href="_css/estilo.css" />
-		<link rel="stylesheet" type="text/css" href="_css/form.css" />
-	</head>
-	<script language="javascript" src="_javascript/funcoes.js" > </script>
 
-	<script>
-		function calc_total(){
-			var qtd = parseInt(document.getElementById('idQtd').value);
-			tot = qtd * 1500; /* cada google glass custa 1500 dólares */
-			document.getElementById('idTot').value = tot;
-		}
-	</script>
-	<body>
-		<div id="interface">
-			<header id = "cabecalho">
-				<hgroup>
-					<h1>Google Glass</h1>
-					<h2>A revolução do Google está chegando</h2>
-				</hgroup>
-				<img id="icone" src="_imagens/contato.png"/>
-				<nav id="menu">
-					<h1>Menu Principal</h1>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css"  href="fale-conosco.css">
+</head>
+
+    <body>
+
+        <div id="interface">
+
+            <header id="cabecalho">
+
+            <img id="icone" src="-ti-logo-.jpg"
+        width="200px"/>
+
+					<h1>Fale Conosco</h1>
 					<ul>
 						<!-- 153.5 -- onmouseout mudar para a imagem desta página -->
 						<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
-						<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
-						<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
-						<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
-						<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+						<li onmouseover="mudaFoto('_imagens/engesot.html')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="engesoft.html">Egenheiro de Software</a></li>
+						<li onmouseover="mudaFoto('_imagens/autor.html')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="autor.html">Autor</a></li>
+						<li onmouseover="mudaFoto('_imagens/arqsotware.html')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="arqsoftware.html">Arquiteto de soluções</a></li>
+						<li onmouseover="mudaFoto('_imagens/fale-conosco.html')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
 					</ul>
 				</nav>
 			<!-- Fim do cabeçalho desta página -->
@@ -43,7 +34,7 @@
 			<section id="corpo-full">
 				<article id="noticia-principal">
 					<hgroup id="cabecalho-noticia-principal">
-						<h3>Glass > Contato</h3>
+						<h3>Rodrigo > Contato</h3>
 						<h1>Formulário de Contato</h1>
 						<h3 class="direita">Atualizado em 01/Maio/2023</h3>
 					</hgroup>
